@@ -1,9 +1,11 @@
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ForEach
 
-function myEach(arr, callback) {
 
-//  CODE INSIDE HERE   //
+function myEach (arr, callback) {
+	for (var i=0; i < arr.length; i++) {
+		callback (arr[i], i, arr);
 
+	}
 }
 
 /*
@@ -19,3 +21,8 @@ function myEach(arr, callback) {
 
 // export this function (you can ignore this for now)
 module.exports = myEach;
+
+
+// ilias class walk through
+
+
